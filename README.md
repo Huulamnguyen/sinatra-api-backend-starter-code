@@ -1,23 +1,17 @@
-# Phase 3 Project Guidelines
+# Sinatra API Backend Starter Code
 
-## Learning Goals
+## Usage
 
 - Build a web basic API with Sinatra and Active Record to support a React
   frontend
 
 ## Introduction
 
-Congrats on getting through all the material for Phase 3! Now's the time to put
-it all together and build something from scratch to reinforce what you know and
-expand your horizons.
-
-The focus of this project is **building a Sinatra API backend** that uses
+The focus of this starter code is **building a Sinatra API backend** that uses
 **Active Record** to access and persist data in a database, which will be used
 by a separate **React frontend** that interacts with the database via the API.
 
-## Requirements
-
-For this project, you must:
+## Common Requirements for a Sinatra API application
 
 - Use Active Record to interact with a database.
 - Have a minimum of two models with a one-to-many relationship.
@@ -47,7 +41,7 @@ This repository has all the starter code needed to get a Sinatra backend up and
 running. [**Fork and clone**][fork link] this repository to get started. Then, run
 `bundle install` to install the gems.
 
-[fork link]: https://github.com/learn-co-curriculum/phase-3-sinatra-react-project/fork
+[fork link]: https://github.com/Huulamnguyen/sinatra-api-backend-starter-code
 
 The `app/controllers/application_controller.rb` file has an example GET route
 handler. Replace this route with routes for your project.
@@ -87,24 +81,6 @@ fetch("http://localhost:9292/test")
   .then((r) => r.json())
   .then((data) => console.log(data));
 ```
-
-## Project Tips
-
-- This project is intended to focus more on the backend than the frontend, so
-  try and keep the React side of things relatively simple. Focus on working with
-  Active Record and performing CRUD actions. What are some interesting queries you can write? What kinds of questions can you ask of your data?
-- Once you have a project idea, come up with a domain model and decide what
-  relationships exist between the models in your application. Use a tool like
-  [dbdiagram.io][] to help visualize your models.
-- Decide on your API endpoints. What data should they return? What kind of CRUD
-  action should they perform? What data do they need from the client?
-- Use [Postman][postman download] to test your endpoints.
-- Use `binding.pry` to debug your requests on the server. It's very helpful to use a
-  `binding.pry` in your controller within a route to see what `params` are being
-  sent.
-- Use the [Network Tab in the Dev Tools][network tab] in the frontend to debug
-  your requests.
-
 ## Resources
 
 - [create-react-app][]
